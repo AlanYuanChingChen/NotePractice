@@ -12,7 +12,6 @@
 
 
 @interface NoteListViewController () <UITableViewDataSource, UITableViewDelegate, NoteViewControllerDelegate>
-//NSFetchedResultsControllerDelegate
 
 @property (nonatomic) NSMutableArray<Note*> *noteArr;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -34,6 +33,7 @@
         //            note.content = @"new";
         //            self.noteArr[i] = note;
         //        }
+        
         /*
         NSManagedObjectContext *context = [[CoreDataHelper sharedInstance] managedObjectContext];
         NSFetchRequest *fetchRequest = [NSFetchRequest new];
